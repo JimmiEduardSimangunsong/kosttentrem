@@ -13,42 +13,42 @@ import '../style/tailwind.css';
 function froom() {
   return (
     <div className="d-flex flex-wrap justify-content-around">
-      <Card  className="bg-light text-center" style={{ width: '18rem'  }}>
+      <Card  className="bg-light text-center" style={{ width: '10rem', height: '14rem' }}>
         <Card.Img variant="top" src={bed} />
         <Card.Body>
           <Card.Title>Kasur</Card.Title>
         </Card.Body>
       </Card>
 
-      <Card className="text-center" style={{ width: '18rem'  }}>
+      <Card className="bg-light text-center" style={{ width: '10rem', height: '14rem' }}>
         <Card.Img variant="top" src={table} />
         <Card.Body>
           <Card.Title>Meja</Card.Title>
         </Card.Body>
       </Card>
 
-      <Card className="text-center" style={{ width: '18rem'  }}>
+      <Card className="bg-light text-center" style={{ width: '10rem', height: '14rem' }}>
         <Card.Img variant="top" src={chair} />
         <Card.Body>
           <Card.Title>kursi</Card.Title>
         </Card.Body>
       </Card>
 
-      <Card className="text-center" style={{ width: '18rem'  }}>
+      <Card className="bg-light text-center" style={{ width: '10rem', height: '14rem' }}>
         <Card.Img variant="top" src={dresstable} />
         <Card.Body>
           <Card.Title>Meja Rias</Card.Title>
         </Card.Body>
       </Card>
 
-      <Card className="text-center" style={{ width: '18rem'  }}>
+      <Card className="bg-light text-center" style={{ width: '10rem', height: '14rem' }}>
         <Card.Img variant="top" src={cupboard} />
         <Card.Body>
           <Card.Title>lemari</Card.Title>
         </Card.Body>
       </Card>
 
-      <Card className="text-center" style={{ width: '18rem'  }}>
+      <Card className="bg-light text-center" style={{ width: '10rem', height: '14rem' }}>
         <Card.Img variant="top" src={pillow} />
         <Card.Body>
           <Card.Title>bantal</Card.Title>

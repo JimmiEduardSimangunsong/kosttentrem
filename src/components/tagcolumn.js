@@ -9,16 +9,16 @@ import CardGroup from 'react-bootstrap/CardGroup';
 function Group() {
   return (
     <CardGroup fluid>
-      <Card className="w-100 h-50 rounded shadow">
-        <Card.Img variant="top" src={campur} />
+      <Card className="w-100 h-50 rounded shadow d-flex align-items-center justify-content-center" >
+        <Card.Img variant="top" src={campur} style={{ width: '50%', height: 'auto' }} />
       </Card>
 
-      <Card className="w-100 h-50 rounded shadow">
-        <Card.Img variant="top" src={kamar} />
+      <Card className="w-100 h-50 rounded shadow d-flex align-items-center justify-content-center">
+        <Card.Img variant="top" src={kamar} style={{ width: '50%', height: 'auto' }} />
       </Card>
-      <Card className="w-100 h-50 rounded shadow">
+      <Card className="w-100 h-50 rounded shadow d-flex align-items-center justify-content-center">
 
-        <Card.Img variant="top" src={medan} />
+        <Card.Img variant="top" src={medan} style={{ width: '50%', height: 'auto' }} />
       </Card>
 
     </CardGroup>
