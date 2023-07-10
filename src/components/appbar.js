@@ -15,7 +15,7 @@ import logo from "../asset/images/logo/logo.png";
 import '../style/tailwind.css';
 
 
-const pages = ['Products', 'Pricing', 'Blog'];
+const pages = ['Fasilitas', 'Tipe Kamar', 'ketentuan Sewa'];
 // const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
@@ -38,10 +38,10 @@ function ResponsiveAppBar() {
     };
 
     return (
-        <AppBar position="static" sx={{ backgroundColor: 'green' }}>
+        <AppBar position="static" sx={{ backgroundColor: '#2d7719' }}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
-                    <img src={logo} alt="Logo" style={{ width: '10%', height: 'auto' }} />
+                    <img src={logo} alt="Logo" style={{ width: '7%', height: 'auto' }} />
                     {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
 
                     <Typography
@@ -98,7 +98,7 @@ function ResponsiveAppBar() {
                             ))}
                         </Menu>
                     </Box>
-                    <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+                    {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
                     <Typography
                         variant="h5"
                         noWrap
@@ -115,7 +115,7 @@ function ResponsiveAppBar() {
                             textDecoration: 'none',
                         }}
                     >
-                        LOGO
+                        KostTentrem
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         {pages.map((page) => (
