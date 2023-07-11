@@ -1,9 +1,9 @@
-import { Card } from "react-bootstrap";
 import ResponsiveAppBar from "./components/appbar";
 import CarouselFade from "./components/carousel";
 import Group from "./components/tagcolumn";
 import Froom from "./components/roomfasilitation";
 import Bath from "./components/bathfasilitation";
+import Folder from "./components/pubfacilities";
 import './style/tailwind.css';
 
 function App() {
@@ -25,6 +25,10 @@ function App() {
       <div className="fasilitationbath">
         <h1 className="text-3xl font-bold text-center">Fasilitas Kamar Mandi</h1>
         <Bath/>
+        </div>
+      <div className="pubfacilities">
+        <h1 className="text-3xl font-bold text-center">Fasilitas Umum</h1>
+        <Folder/>
         </div>
       
 
