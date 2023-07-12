@@ -1,7 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/tailwind.css';
-import ktidur from "../asset/images/slide/ktidur.jpg";
+import ktidur from "../asset/images/slide/ktidur.png";
 import kmandi from "../asset/images/slide/kmandi.png";
 import taman from "../asset/images/slide/taman.png";
 

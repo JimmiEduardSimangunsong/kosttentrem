@@ -13,46 +13,58 @@ import '../style/tailwind.css';
 function froom() {
   return (
     <div className="d-flex flex-wrap justify-content-around">
-      <Card  className="bg-light text-center" style={{ width: '10rem', height: '14rem' }}>
-        <Card.Img variant="top" src={bed} />
-        <Card.Body>
-          <Card.Title>Kasur</Card.Title>
-        </Card.Body>
-      </Card>
+       <Card className="bg-light text-center d-flex align-items-center" style={{ width: '10rem', height: '10rem',padding: '1rem' }}>
+  <div className="mx-auto">
+    <Card.Img variant="top" src={bed} className="img-fluid" style={{ width: '5rem', height: '5rem' }} />
+    <Card.Body>
+      <Card.Title>Kasur</Card.Title>
+    </Card.Body>
+  </div>
+</Card>
 
-      <Card className="bg-light text-center" style={{ width: '10rem', height: '14rem' }}>
-        <Card.Img variant="top" src={table} />
-        <Card.Body>
-          <Card.Title>Meja</Card.Title>
-        </Card.Body>
-      </Card>
+      <Card className="bg-light text-center d-flex align-items-center" style={{ width: '10rem', height: '10rem',padding: '1rem' }}>
+  <div className="mx-auto">
+    <Card.Img variant="top" src={table} className="img-fluid" style={{ width: '5rem', height: '5rem' }} />
+    <Card.Body>
+      <Card.Title>Meja</Card.Title>
+    </Card.Body>
+  </div>
+</Card>
 
-      <Card className="bg-light text-center" style={{ width: '10rem', height: '14rem' }}>
-        <Card.Img variant="top" src={chair} />
+      <Card className="bg-light text-center d-flex align-items-center" style={{ width: '10rem', height: '10rem',padding: '1rem' }}>
+      <div className="mx-auto">
+        <Card.Img variant="top" src={chair} className="img-fluid" style={{ width: '5rem', height: '5rem' }} />
         <Card.Body>
           <Card.Title>kursi</Card.Title>
         </Card.Body>
+      </div>
       </Card>
 
-      <Card className="bg-light text-center" style={{ width: '10rem', height: '14rem' }}>
-        <Card.Img variant="top" src={dresstable} />
-        <Card.Body>
-          <Card.Title>Meja Rias</Card.Title>
-        </Card.Body>
-      </Card>
+      <Card className="bg-light text-center d-flex align-items-center" style={{ width: '10rem', height: '10rem',padding: '1rem' }}>
+  <div className="mx-auto">
+    <Card.Img variant="top" src={dresstable} className="img-fluid" style={{ width: '5rem', height: '5rem' }} />
+    <Card.Body>
+      <Card.Title>M.Rias</Card.Title>
+    </Card.Body>
+  </div>
+</Card>
 
-      <Card className="bg-light text-center" style={{ width: '10rem', height: '14rem' }}>
-        <Card.Img variant="top" src={cupboard} />
+      <Card className="bg-light text-center d-flex align-items-center" style={{ width: '10rem', height: '10rem',padding: '1rem' }}>
+      <div className="mx-auto">
+        <Card.Img variant="top" src={cupboard} className="img-fluid" style={{ width: '5rem', height: '5rem' }} />
         <Card.Body>
           <Card.Title>lemari</Card.Title>
         </Card.Body>
+      </div>
       </Card>
 
-      <Card className="bg-light text-center" style={{ width: '10rem', height: '14rem' }}>
-        <Card.Img variant="top" src={pillow} />
+      <Card className="bg-light text-center d-flex align-items-center" style={{ width: '10rem', height: '10rem',padding: '1rem' }}>
+      <div className="mx-auto">
+        <Card.Img variant="top" src={pillow} className="img-fluid" style={{ width: '5rem', height: '5rem' }}  />
         <Card.Body>
           <Card.Title>bantal</Card.Title>
         </Card.Body>
+      </div>
       </Card>
 
       {/* <Card className="bg-light text-center" style={{ width: '18rem'  }}>
