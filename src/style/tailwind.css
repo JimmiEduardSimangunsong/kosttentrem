@@ -3,3 +3,43 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+
+.toast-center {
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.toast-center .toast {
+    width: 80%;
+    height: 80%;
+    padding: 20px;
+}
+
+.toast-body {
+    font-size: 18px; /* Ubah ukuran teks sesuai kebutuhan */
+}
+
+.fasilitationbath{
+    background-color: #2d7719;
+
+} 
+
+.lokasi{
+    background-color: #2d7719;
+}
+
+/* .Gallery{
+    background-image: url(/src/asset/images/latar/tembok.png);
+} */
+
+.card-container {
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px; /* Jarak antara kartu-kartu */
+
+  }
