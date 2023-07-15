@@ -8,11 +8,14 @@ import Tipekamar from "./components/tipekamar";
 import Gallery from "./components/gallery";
 import  Promosi from "./components/promosi";
 import Lokasi from "./components/lokasi";
+import Footer from "./components/footer";
 import './style/tailwind.css';
+
 
 
 function App() {
   return (
+    <div style={{ overflow: 'hidden' }}>
     <div>
       <div className='appbar'>
         <ResponsiveAppBar/>
@@ -51,10 +54,13 @@ function App() {
         <h1 className="text-3xl font-bold text-center">Gallery</h1>
         <Gallery/>
         </div>
+
+        <Footer />
       
 
 
 
+    </div>
     </div>
   );
 }

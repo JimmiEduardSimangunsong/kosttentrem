@@ -31,11 +31,34 @@
 
 .lokasi{
     background-color: #2d7719;
+    margin-bottom: 50px;
 }
 
 /* .Gallery{
     background-image: url(/src/asset/images/latar/tembok.png);
 } */
+
+.tipekamar{
+    margin-bottom: 50px;
+}
+
+.pubfacilities{
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.fasilitationbath{
+    margin-bottom: 50px;
+}
+
+.fasilitationroom{
+    margin-bottom: 50px;
+}
+
+.tagcl{
+    margin-bottom: 50px;
+}
 
 .card-container {
     display: grid;
@@ -43,3 +66,78 @@
   gap: 20px; /* Jarak antara kartu-kartu */
 
   }
+
+
+  /* footer */
+  .footer {
+    background-color: #2d7719;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo-img {
+    width: 100px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .logo-img:hover {
+    transform: scale(1.2);
+  }
+  
+  .typography-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    animation: pulse 1s ease-in-out infinite;
+  }
+  
+  .typography-description {
+    font-size: 16px;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Animasi */
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    animation: fade-in 1s ease-out;
+  }
+
+
+  
+  

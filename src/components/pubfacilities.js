@@ -7,7 +7,6 @@ import Avatar from '@mui/material/Avatar';
 import Grid from '@mui/material/Grid';
 import ImageIcon from '@mui/icons-material/Image';
 import WorkIcon from '@mui/icons-material/Work';
-import BeachAccessIcon from '@mui/icons-material/BeachAccess';
 import wifi from "../asset/images/pub/wifi.png";
 import laundry from "../asset/images/pub/laundry.png";
 import security from "../asset/images/pub/security.png";
@@ -20,6 +19,8 @@ import garden from "../asset/images/pub/garden.png";
 import toilet from "../asset/images/pub/toilet.png";
 import gazebo from "../asset/images/pub/gazebo.png";
 import hanger from "../asset/images/pub/hanger.png";
+import '../style/tailwind.css';
+
 
 export default function FolderList() {
   return (

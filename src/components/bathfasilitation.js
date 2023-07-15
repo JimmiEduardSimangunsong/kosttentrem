@@ -11,6 +11,7 @@ import shower from "../asset/images/broom/shower.png";
 import squattoilet from "../asset/images/broom/squattoilet.png";
 import bathroom from "../asset/images/broom/bathroom.png";
 import bumf from "../asset/images/broom/bumf.png";
+import '../style/tailwind.css';
 
 export default function AlignItemsList() {
   return (

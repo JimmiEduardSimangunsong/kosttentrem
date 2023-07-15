@@ -1,7 +1,11 @@
 import React from 'react';
-import kamartipe1 from "../asset/images/tipekamar/kamartipe1.png";
-import kamartipe2 from "../asset/images/tipekamar/kamartipe2.png";
-import kamartipe3 from "../asset/images/tipekamar/kamartipe3.png";
+import '../style/tailwind.css';
+import noackamarmandiluar from "../asset/images/tipekamar/noackamarmandiluar.jpg";
+import noackamarmandidalam from "../asset/images/tipekamar/noackamarmandidalam.jpg";
+import ackamarmandidalam from "../asset/images/tipekamar/ackamarmandidalam.jpg";
+import acbesar from "../asset/images/tipekamar/acbesar.jpg";
+import aclobby from "../asset/images/tipekamar/aclobby.jpg";
+import acjumbo from "../asset/images/tipekamar/acjumbo.jpg";
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Row from 'react-bootstrap/Row';
@@ -16,20 +20,28 @@ function KitchenSinkExample() {
     objectFit: 'cover',
   };
 
-  // Harga sebelum diskon dan harga setelah diskon
-  const hargaTipe1 = {
-    harga: 1500000,
-    diskon: 200000,
+  const harganonacwcluar = {
+    harga: 950000,
   };
 
-  const hargaTipe2 = {
-    harga: 1800000,
-    diskon: 300000,
+  const harganonacwcdalam = {
+    harga: 1150000,
   };
 
-  const hargaTipe3 = {
+  const hargaac = {
+    harga: 1700000,
+  };
+
+  const hargaacbesar = {
     harga: 2000000,
-    diskon: 400000,
+  };
+
+  const hargaacjumbo = {
+    harga: 2800000,
+  };
+
+  const hargaaclobby = {
+    harga: 200000,
   };
 
   const titleStyle = {
@@ -45,13 +57,6 @@ function KitchenSinkExample() {
   };
 
   const hargaStyle = {
-    fontSize: '18px',
-    color: '#2d7719',
-    marginBottom: '5px',
-    textDecoration: 'line-through',
-  };
-
-  const hargaDiskonStyle = {
     fontSize: '24px',
     fontWeight: 'bold',
     color: '#2d7719',
@@ -64,96 +69,165 @@ function KitchenSinkExample() {
     window.open(url, '_blank');
   };
 
-  const handlePesanSekarang = (tipeKamar) => {
-    let phoneNumber = ''; // Ganti dengan nomor WhatsApp pemilik kost sesuai dengan tipe kamar
-    if (tipeKamar === '1') {
-      phoneNumber = '8126515295'; // Ganti dengan nomor WhatsApp pemilik kost untuk Kamar Tipe 1
-    } else if (tipeKamar === '2') {
-      phoneNumber = '8126515295'; // Ganti dengan nomor WhatsApp pemilik kost untuk Kamar Tipe 2
-    } else if (tipeKamar === '3') {
-      phoneNumber = '8126515295'; // Ganti dengan nomor WhatsApp pemilik kost untuk Kamar Tipe 3
-    }
+  const handlePesanSekarang = () => {
+    const phoneNumber = '8126515295'; // Ganti dengan nomor WhatsApp pemilik kost yang akan digunakan
 
     handleWhatsAppClick(phoneNumber);
   };
 
   return (
     <Row>
-      <Col md={4}>
+      <Col md={4} className="mb-4">
         <Card style={{ width: '100%' }}>
-          <Card.Img variant="top" src={kamartipe1} style={cardImageStyle} />
+          <Card.Img variant="top" src={noackamarmandiluar} style={cardImageStyle} />
           <Card.Body>
-            <Card.Title style={titleStyle}>Kamar Tipe 1</Card.Title>
+            <Card.Title style={titleStyle}>Non AC, WC Luar</Card.Title>
             <Card.Text style={textStyle}>
-              Bayar dengan harga abnormal, bisa bayar bulanan. Dan kabar baiknya harga tersebut sudah termasuk biaya listrik.
+              Biaya tambahan untuk orang kedua sebesar 200.000/bulan.
             </Card.Text>
             <Card.Text>
-              <span style={hargaStyle}>Harga: Rp {hargaTipe1.harga}</span> {/* Harga sebelum diskon */}
-              <br />
-              <span style={hargaDiskonStyle}>Harga Sekarang: Rp {hargaTipe1.harga - hargaTipe1.diskon}</span> {/* Harga setelah diskon */}
+              <span style={hargaStyle}>Harga: Rp {harganonacwcluar.harga}/bulan</span> {/* Harga asli */}
             </Card.Text>
           </Card.Body>
           <ListGroup className="list-group-flush">
-            <ListGroup.Item>AC</ListGroup.Item>
+            <ListGroup.Item>Lemari Baju</ListGroup.Item>
+            <ListGroup.Item>Meja</ListGroup.Item>
+            <ListGroup.Item>Tempat Tidur</ListGroup.Item>
+          </ListGroup>
+          <Card.Body>
+            <Button variant="success" onClick={handlePesanSekarang}>
+              <FontAwesomeIcon icon={faWhatsapp} style={{ marginRight: '5px' }} />
+              Pesan Sekarang
+            </Button>
+          </Card.Body>
+        </Card>
+      </Col>
+      <Col md={4} className="mb-4">
+        <Card style={{ width: '100%' }}>
+          <Card.Img variant="top" src={noackamarmandidalam} style={cardImageStyle} />
+          <Card.Body>
+            <Card.Title style={titleStyle}>Non AC, WC Dalam</Card.Title>
+            <Card.Text style={textStyle}>
+              Biaya tambahan untuk orang kedua sebesar 200.000/bulan.
+            </Card.Text>
+            <Card.Text>
+              <span style={hargaStyle}>Harga: Rp {harganonacwcdalam.harga}/Bulan</span> {/* Harga asli */}
+            </Card.Text>
+          </Card.Body>
+          <ListGroup className="list-group-flush">
             <ListGroup.Item>Kamar Mandi Dalam</ListGroup.Item>
-            <ListGroup.Item>Meja Rias</ListGroup.Item>
+            <ListGroup.Item>Meja</ListGroup.Item>
+            <ListGroup.Item>Tempat Tidur</ListGroup.Item>
           </ListGroup>
           <Card.Body>
-            <Button variant="success" onClick={() => handlePesanSekarang('1')}>
+            <Button variant="success" onClick={handlePesanSekarang}>
               <FontAwesomeIcon icon={faWhatsapp} style={{ marginRight: '5px' }} />
               Pesan Sekarang
             </Button>
           </Card.Body>
         </Card>
       </Col>
-      <Col md={4}>
+      <Col md={4} className="mb-4">
         <Card style={{ width: '100%' }}>
-          <Card.Img variant="top" src={kamartipe2} style={cardImageStyle} />
+          <Card.Img variant="top" src={ackamarmandidalam} style={cardImageStyle} />
           <Card.Body>
-            <Card.Title style={titleStyle}>Kamar Tipe 2</Card.Title>
+            <Card.Title style={titleStyle}>Kamar AC</Card.Title>
             <Card.Text style={textStyle}>
-            Bayar dengan harga abnormal, bisa bayar bulanan. Dan kabar baiknya harga tersebut sudah termasuk biaya listrik. 
+              Biaya tambahan untuk orang kedua sebesar 200.000/bulan.
             </Card.Text>
             <Card.Text>
-              <span style={hargaStyle}>Harga: Rp {hargaTipe2.harga}</span> {/* Harga sebelum diskon */}
-              <br />
-              <span style={hargaDiskonStyle}>Harga Sekarang: Rp {hargaTipe2.harga - hargaTipe2.diskon}</span> {/* Harga setelah diskon */}
+              <span style={hargaStyle}>Harga: Rp {hargaac.harga}/Bulan</span> {/* Harga asli */}
             </Card.Text>
           </Card.Body>
           <ListGroup className="list-group-flush">
-            <ListGroup.Item>tidak ada water heater</ListGroup.Item>
-            <ListGroup.Item>tidak ada water heater</ListGroup.Item>
-            <ListGroup.Item>tidak ada water heater</ListGroup.Item>
+            <ListGroup.Item>Kamar Mandi Dalam</ListGroup.Item>
+            <ListGroup.Item>AC</ListGroup.Item>
+            <ListGroup.Item>Meja</ListGroup.Item>
+            <ListGroup.Item>Lemari</ListGroup.Item>
           </ListGroup>
           <Card.Body>
-            <Button variant="success" onClick={() => handlePesanSekarang('2')}>
+            <Button variant="success" onClick={handlePesanSekarang}>
               <FontAwesomeIcon icon={faWhatsapp} style={{ marginRight: '5px' }} />
               Pesan Sekarang
             </Button>
           </Card.Body>
         </Card>
       </Col>
-      <Col md={4}>
+      <Col md={4} className="mb-4">
         <Card style={{ width: '100%' }}>
-          <Card.Img variant="top" src={kamartipe3} style={cardImageStyle} />
+          <Card.Img variant="top" src={acjumbo} style={cardImageStyle} />
           <Card.Body>
-            <Card.Title style={titleStyle}>Kamar Tipe 3</Card.Title>
+            <Card.Title style={titleStyle}>AC Jumbo</Card.Title>
             <Card.Text style={textStyle}>
-            Bayar dengan harga abnormal, bisa bayar bulanan. Dan kabar baiknya harga tersebut sudah termasuk biaya listrik. 
+              Biaya tambahan untuk orang kedua sebesar 200.000/bulan.
             </Card.Text>
             <Card.Text>
-              <span style={hargaStyle}>Harga: Rp {hargaTipe3.harga}</span> {/* Harga sebelum diskon */}
-              <br />
-              <span style={hargaDiskonStyle}>Harga Sekarang: Rp {hargaTipe3.harga - hargaTipe3.diskon}</span> {/* Harga setelah diskon */}
+              <span style={hargaStyle}>Harga: Rp {hargaacjumbo.harga}/Bulan</span> {/* Harga asli */}
             </Card.Text>
           </Card.Body>
           <ListGroup className="list-group-flush">
-            <ListGroup.Item>Kamar full furnish</ListGroup.Item>
-            <ListGroup.Item>free wifi</ListGroup.Item>
-            <ListGroup.Item>bebas dari biaya-biaya lainnya.</ListGroup.Item>
+            <ListGroup.Item>Kamar Mandi Dalam</ListGroup.Item>
+            <ListGroup.Item>SpringBed</ListGroup.Item>
+            <ListGroup.Item>AC</ListGroup.Item>
+            <ListGroup.Item>Meja</ListGroup.Item>
+            <ListGroup.Item>Lemari</ListGroup.Item>
           </ListGroup>
           <Card.Body>
-            <Button variant="success" onClick={() => handlePesanSekarang('3')}>
+            <Button variant="success" onClick={handlePesanSekarang}>
+              <FontAwesomeIcon icon={faWhatsapp} style={{ marginRight: '5px' }} />
+              Pesan Sekarang
+            </Button>
+          </Card.Body>
+        </Card>
+      </Col>
+      <Col md={4} className="mb-4">
+        <Card style={{ width: '100%' }}>
+          <Card.Img variant="top" src={acbesar} style={cardImageStyle} />
+          <Card.Body>
+            <Card.Title style={titleStyle}>AC Besar</Card.Title>
+            <Card.Text style={textStyle}>
+              Biaya tambahan untuk orang kedua sebesar 200.000/bulan.
+            </Card.Text>
+            <Card.Text>
+              <span style={hargaStyle}>Harga: Rp {hargaacbesar.harga}/Bulan</span> {/* Harga asli */}
+            </Card.Text>
+          </Card.Body>
+          <ListGroup className="list-group-flush">
+            <ListGroup.Item>Kamarmandi Dalam</ListGroup.Item>
+            <ListGroup.Item>2 Tempat Tidur</ListGroup.Item>
+            <ListGroup.Item>AC</ListGroup.Item>
+            <ListGroup.Item>Meja.</ListGroup.Item>
+            <ListGroup.Item>Lemari</ListGroup.Item>
+          </ListGroup>
+          <Card.Body>
+            <Button variant="success" onClick={handlePesanSekarang}>
+              <FontAwesomeIcon icon={faWhatsapp} style={{ marginRight: '5px' }} />
+              Pesan Sekarang
+            </Button>
+          </Card.Body>
+        </Card>
+      </Col>
+      <Col md={4} className="mb-4">
+        <Card style={{ width: '100%' }}>
+          <Card.Img variant="top" src={aclobby} style={cardImageStyle} />
+          <Card.Body>
+            <Card.Title style={titleStyle}>AC Lobby</Card.Title>
+            <Card.Text style={textStyle}>
+              Khusus untuk Guest Room (permalam/perminggu)
+            </Card.Text>
+            <Card.Text>
+              <span style={hargaStyle}>Harga: Rp {hargaaclobby.harga}/Malam</span> {/* Harga asli */}
+            </Card.Text>
+          </Card.Body>
+          <ListGroup className="list-group-flush">
+            <ListGroup.Item>Kamar Mandi Dalam</ListGroup.Item>
+            <ListGroup.Item>AC</ListGroup.Item>
+            <ListGroup.Item>SpringBed</ListGroup.Item>
+            <ListGroup.Item>Meja</ListGroup.Item>
+            <ListGroup.Item>Lemari</ListGroup.Item>
+          </ListGroup>
+          <Card.Body>
+            <Button variant="success" onClick={handlePesanSekarang}>
               <FontAwesomeIcon icon={faWhatsapp} style={{ marginRight: '5px' }} />
               Pesan Sekarang
             </Button>

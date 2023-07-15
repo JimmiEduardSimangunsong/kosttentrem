@@ -39,8 +39,8 @@ export default function CustomImageList() {
       }}>
     <ImageList
       sx={{
-        width: '80%',
-        height: '86%',
+        width: '73%',
+        height: '85%',
         margin: '0 auto',
         // Promote the list into its own layer in Chrome. This costs memory, but helps keeping high FPS.
         transform: 'translateZ(0)',
