@@ -139,5 +139,40 @@
   }
 
 
+  /* css hubungi kami */
+  .chat-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .chat-container a {
+    display: inline-block;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+
+  .whatsapp-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #25D366; /* Ubah warna latar belakang sesuai kebutuhan */
+    color: #fff; /* Ubah warna teks sesuai kebutuhan */
+  }
+  
+  .whatsapp-icon {
+    margin-right: 8px; /* Menambahkan jarak antara ikon dan teks */
+  }
+  
+  .whatsapp-text {
+    margin-left: 8px; /* Menambahkan jarak antara ikon dan teks */
+  }
+  
+
   
   

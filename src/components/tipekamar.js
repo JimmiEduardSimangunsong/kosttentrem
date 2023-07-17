@@ -71,7 +71,6 @@ function KitchenSinkExample() {
 
   const handlePesanSekarang = () => {
     const phoneNumber = '8126515295'; // Ganti dengan nomor WhatsApp pemilik kost yang akan digunakan
-
     handleWhatsAppClick(phoneNumber);
   };
 

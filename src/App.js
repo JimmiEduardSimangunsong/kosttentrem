@@ -9,6 +9,7 @@ import Gallery from "./components/gallery";
 import  Promosi from "./components/promosi";
 import Lokasi from "./components/lokasi";
 import Footer from "./components/footer";
+import Chat from "./components/chat";
 import './style/tailwind.css';
 
 
@@ -56,6 +57,7 @@ function App() {
         </div>
 
         <Footer />
+        <Chat />
       
 
 
