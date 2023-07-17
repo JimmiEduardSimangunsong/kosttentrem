@@ -192,7 +192,7 @@ function KitchenSinkExample() {
             </Card.Text>
           </Card.Body>
           <ListGroup className="list-group-flush">
-            <ListGroup.Item>Kamarmandi Dalam</ListGroup.Item>
+            <ListGroup.Item>Kamar mandi Dalam</ListGroup.Item>
             <ListGroup.Item>2 Tempat Tidur</ListGroup.Item>
             <ListGroup.Item>AC</ListGroup.Item>
             <ListGroup.Item>Meja.</ListGroup.Item>
@@ -221,7 +221,7 @@ function KitchenSinkExample() {
           <ListGroup className="list-group-flush">
             <ListGroup.Item>Kamar Mandi Dalam</ListGroup.Item>
             <ListGroup.Item>AC</ListGroup.Item>
-            <ListGroup.Item>SpringBed</ListGroup.Item>
+            <ListGroup.Item>Springbed</ListGroup.Item>
             <ListGroup.Item>Meja</ListGroup.Item>
             <ListGroup.Item>Lemari</ListGroup.Item>
           </ListGroup>

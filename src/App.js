@@ -28,11 +28,11 @@ function App() {
         <Group/>
         <Promosi/>
       </div>
-      <div className="fasilitationroom">
+      <div className="fasilitationroom" id="fasilitationroom">
         <h1 className="text-3xl font-bold text-center">Fasilitas Kamar</h1>
         <Froom/>
       </div>
-      <div className="fasilitationbath" style={{ color: 'white' }}>
+      <div className="fasilitationbath" >
         <h1 className="text-3xl font-bold text-center">Fasilitas Kamar Mandi</h1>
         <Bath/>
         </div>
@@ -40,18 +40,18 @@ function App() {
         <h1 className="text-3xl font-bold text-center">Fasilitas Umum</h1>
         <Folder/>
         </div>
-        <div className="tipekamar">
+        <div className="tipekamar" id="tipekamar">
         <h1 className="text-3xl font-bold text-center">Tipe Kamar</h1>
         <Tipekamar/>
         </div>
 
-        <div className="lokasi" style={{ color: 'white' }}>
+        <div className="lokasi" >
         <h1 className="text-3xl font-bold text-center ">Lokasi Kost Tentrem</h1>
         <Lokasi/>
         </div>
 
 
-        <div className="Gallery">
+        <div className="Gallery" id="Gallery">
         <h1 className="text-3xl font-bold text-center">Gallery</h1>
         <Gallery/>
         </div>
