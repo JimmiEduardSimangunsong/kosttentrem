@@ -6,7 +6,7 @@ import IconButton from '@mui/material/IconButton';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 import security from "../asset/images/gallery/security.png";
 import taman from "../asset/images/gallery/taman.png";
-import depan from "../asset/images/gallery/Depan.png";
+import depan from "../asset/images/gallery/Depan.jpg";
 import tim from "../asset/images/gallery/tim.png";
 import kamar1 from "../asset/images/gallery/kamar1.png";
 import kamar2 from "../asset/images/gallery/kamar2.png";
@@ -19,6 +19,12 @@ import lantai2 from "../asset/images/gallery/lantai2.png";
 import kamartampakdepan from "../asset/images/gallery/kamartampakdepan.png";
 import parkirspeda from "../asset/images/gallery/parkirspeda.png";
 import fasilitaskamar from "../asset/images/gallery/fasilitaskamar.png";
+import lobby2 from "../asset/images/gallery/lobby2.jpg";
+import lobby3 from "../asset/images/gallery/lobby3.jpg";
+import lobbyview from "../asset/images/gallery/lobbyview.jpg";
+import mobil from "../asset/images/gallery/mobil.jpg";
+import tamanbelakang from "../asset/images/gallery/tamanbelakang.jpg";
+import viewatas from "../asset/images/gallery/viewatas.jpg";
 
 function srcset(image, width, height, rows = 1, cols = 1) {
   return {
@@ -44,6 +50,7 @@ export default function CustomImageList() {
         margin: '0 auto',
         // Promote the list into its own layer in Chrome. This costs memory, but helps keeping high FPS.
         transform: 'translateZ(0)',
+
       }}
       rowHeight={200}
       gap={1}
@@ -58,6 +65,7 @@ export default function CustomImageList() {
               {...srcset(item.img, 250, 200, rows, cols)}
               alt={item.title}
               loading="lazy"
+              style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             />
             <ImageListItemBar
               sx={{
@@ -161,6 +169,36 @@ const itemData = [
   {
     img:    parkirspeda,
     title: 'Parkir Sepeda',
+    author: '@southside_customs',
+  },
+  {
+    img:    lobby2,
+    title: 'Lobby 2',
+    author: '@southside_customs',
+  },
+  {
+    img:    lobby3,
+    title: 'Lobby 3',
+    author: '@southside_customs',
+  },
+  {
+    img:    lobbyview,
+    title: 'Lobby View',
+    author: '@southside_customs',
+  },
+  {
+    img:    mobil,
+    title: 'Parkir Mobil 2',
+    author: '@southside_customs',
+  },
+  {
+    img:    viewatas,
+    title: 'View dari atas',
+    author: '@southside_customs',
+  },
+  {
+    img:    tamanbelakang,
+    title: 'Taman Belakang',
     author: '@southside_customs',
   },
 ];

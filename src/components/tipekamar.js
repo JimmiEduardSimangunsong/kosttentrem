@@ -62,16 +62,12 @@ function KitchenSinkExample() {
     color: '#2d7719',
   };
 
-  const handleWhatsAppClick = (phoneNumber) => {
-    const message = 'Halo, saya ingin pesan kamar.'; // Ganti dengan pesan yang diinginkan
-
-    const url = `https://api.whatsapp.com/send?phone=+62${phoneNumber}&text=${encodeURIComponent(message)}`;
-    window.open(url, '_blank');
-  };
-
   const handlePesanSekarang = () => {
-    const phoneNumber = '8126515295'; // Ganti dengan nomor WhatsApp pemilik kost yang akan digunakan
-    handleWhatsAppClick(phoneNumber);
+    const phoneNumber = '628126515295'; // Replace with the correct WhatsApp phone number
+    const message = 'Halo, saya ingin pesan kamar.'; // Replace with your desired message
+  
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.location.href = url;
   };
 
   return (
@@ -128,7 +124,7 @@ function KitchenSinkExample() {
       </Col>
       <Col md={4} className="mb-4">
         <Card style={{ width: '100%' }}>
-          <Card.Img variant="top" src={ackamarmandidalam} style={cardImageStyle} />
+          <Card.Img variant="top" src={ackamarmandidalam} style={cardImageStyle}  />
           <Card.Body>
             <Card.Title style={titleStyle}>Kamar AC</Card.Title>
             <Card.Text style={textStyle}>

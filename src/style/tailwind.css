@@ -176,6 +176,37 @@
   .whatsapp-text {
     margin-left: 8px; /* Menambahkan jarak antara ikon dan teks */
   }
+
+
+  /* responsive */
+
+  /* -ini untuk componen promosi */
+  .Toast .toast-body {
+    font-size: 14px;
+  }
+
+
+/* Media queries for mobile-sized screens (e.g., iPhone) */
+@media (max-width: 576px) {
+  .Toast .toast-body {
+    font-size: 12px;
+  }
+}
+
+/* -ini yg fasilitas publik */
+
+@media (max-width: 1280px) {
+  .GridItem {
+    flex-basis: calc(50% - 20px); /* Show 2 columns on tablets (e.g., iPad) */
+  }
+}
+
+@media (max-width: 768px) {
+  .GridItem {
+    flex-basis: 100%; /* Show 1 column on mobile phones */
+    margin: 0;
+  }
+}
   
 
   
