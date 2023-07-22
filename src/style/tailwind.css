@@ -35,9 +35,7 @@
 
 }
 
-/* .Gallery{
-    background-image: url(/src/asset/images/latar/tembok.png);
-} */
+
 
 .tipekamar{
     margin-bottom: 50px;
@@ -45,8 +43,8 @@
 
 .pubfacilities{
     margin-bottom: 50px;
-    align-items: center;
-    justify-content: center;
+    margin-right: 60px;
+    margin-left: 60px;
 }
 
 .fasilitationbath{
@@ -179,34 +177,36 @@
 
 
   /* responsive */
-
-  /* -ini untuk componen promosi */
-  .Toast .toast-body {
-    font-size: 14px;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
-
-/* Media queries for mobile-sized screens (e.g., iPhone) */
-@media (max-width: 576px) {
-  .Toast .toast-body {
-    font-size: 12px;
+  
+  .grid-item {
+    flex: 0 0 16.6667%; /* 6 columns on larger screens */
+    max-width: 16.6667%;
   }
-}
+  
+  /* Media query for tablets */
+  @media (max-width: 1023px) {
+    .grid-item {
+      flex: 0 0 50%; /* 2 columns on tablets */
+      max-width: 50%;
 
-/* -ini yg fasilitas publik */
-
-@media (max-width: 1280px) {
-  .GridItem {
-    flex-basis: calc(50% - 20px); /* Show 2 columns on tablets (e.g., iPad) */
+    }
   }
-}
-
-@media (max-width: 768px) {
-  .GridItem {
-    flex-basis: 100%; /* Show 1 column on mobile phones */
-    margin: 0;
+  
+  /* Media query for mobile devices */
+  @media (max-width: 767px) {
+    .grid-item {
+      flex: 0 0 100%; /* 1 column on mobile */
+      max-width: 100%;
+    }
   }
-}
+  
+
+
   
 
   
