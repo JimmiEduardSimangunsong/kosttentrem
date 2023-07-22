@@ -34,7 +34,7 @@ function ContextualExample() {
                         3.Lingkungan kost yang nyaman, aman, dan menenangkan, memberikan Anda ketenangan dan privasi yang Anda butuhkan.<br></br>
                         4.Harga sewa kost yang terjangkau dan sesuai dengan kualitas serta fasilitas yang disediakan.<br></br>
                         5.Kebersihan yang terjaga dengan baik, sehingga Anda bisa merasa nyaman dan bersih di setiap sudut kost.<br></br>
-                        6.Kami berkomitmen untuk memberikan pengalaman tinggal yang menyenangkan dan memenuhi harapan Anda di Tentrem Kost.<br></br>    
+                        6.Kami berkomitmen untuk memberikan pengalaman tinggal yang menyenangkan dan memenuhi harapan Anda di Kost Tentrem.<br></br>    
                     </Toast.Body>
                 </Toast>
 
