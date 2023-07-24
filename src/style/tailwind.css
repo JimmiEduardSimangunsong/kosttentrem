@@ -21,7 +21,7 @@
 }
 
 .toast-body {
-    font-size: 18px; /* Ubah ukuran teks sesuai kebutuhan */
+    font-size: 18px; 
 }
 
 .fasilitationbath{
@@ -63,7 +63,7 @@
 .card-container {
     display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px; /* Jarak antara kartu-kartu */
+  gap: 20px; 
 
   }
 
@@ -163,16 +163,16 @@
     text-decoration: none;
     padding: 10px;
     border-radius: 10px;
-    background-color: #25D366; /* Ubah warna latar belakang sesuai kebutuhan */
-    color: #fff; /* Ubah warna teks sesuai kebutuhan */
+    background-color: #25D366; 
+    color: #fff; 
   }
   
   .whatsapp-icon {
-    margin-right: 8px; /* Menambahkan jarak antara ikon dan teks */
+    margin-right: 8px;
   }
   
   .whatsapp-text {
-    margin-left: 8px; /* Menambahkan jarak antara ikon dan teks */
+    margin-left: 8px; 
   }
 
 
