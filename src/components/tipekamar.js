@@ -63,9 +63,9 @@ function KitchenSinkExample() {
   };
 
   const handlePesanSekarang = () => {
-    const phoneNumber = '628126515295'; // Replace with the correct WhatsApp phone number
-    const message = 'Halo, saya ingin pesan kamar.'; // Replace with your desired message
-  
+    const phoneNumber = '628126515295';
+    const message = 'Halo, saya ingin pesan kamar.';
+
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.location.href = url;
   };
@@ -87,6 +87,7 @@ function KitchenSinkExample() {
           <ListGroup className="list-group-flush">
             <ListGroup.Item>Lemari Baju</ListGroup.Item>
             <ListGroup.Item>Meja</ListGroup.Item>
+            <ListGroup.Item>Kursi</ListGroup.Item>
             <ListGroup.Item>Tempat Tidur</ListGroup.Item>
           </ListGroup>
           <Card.Body>
@@ -112,6 +113,7 @@ function KitchenSinkExample() {
           <ListGroup className="list-group-flush">
             <ListGroup.Item>Kamar Mandi Dalam</ListGroup.Item>
             <ListGroup.Item>Meja</ListGroup.Item>
+            <ListGroup.Item>Kursi</ListGroup.Item>
             <ListGroup.Item>Tempat Tidur</ListGroup.Item>
           </ListGroup>
           <Card.Body>
@@ -124,7 +126,7 @@ function KitchenSinkExample() {
       </Col>
       <Col md={4} className="mb-4">
         <Card style={{ width: '100%' }}>
-          <Card.Img variant="top" src={ackamarmandidalam} style={cardImageStyle}  />
+          <Card.Img variant="top" src={ackamarmandidalam} style={cardImageStyle} />
           <Card.Body>
             <Card.Title style={titleStyle}>Kamar AC</Card.Title>
             <Card.Text style={textStyle}>
@@ -138,6 +140,7 @@ function KitchenSinkExample() {
             <ListGroup.Item>Kamar Mandi Dalam</ListGroup.Item>
             <ListGroup.Item>AC</ListGroup.Item>
             <ListGroup.Item>Meja</ListGroup.Item>
+            <ListGroup.Item>Kursi</ListGroup.Item>
             <ListGroup.Item>Lemari</ListGroup.Item>
           </ListGroup>
           <Card.Body>
@@ -165,6 +168,7 @@ function KitchenSinkExample() {
             <ListGroup.Item>SpringBed</ListGroup.Item>
             <ListGroup.Item>AC</ListGroup.Item>
             <ListGroup.Item>Meja</ListGroup.Item>
+            <ListGroup.Item>Kursi</ListGroup.Item>
             <ListGroup.Item>Lemari</ListGroup.Item>
           </ListGroup>
           <Card.Body>
@@ -192,6 +196,7 @@ function KitchenSinkExample() {
             <ListGroup.Item>2 Tempat Tidur</ListGroup.Item>
             <ListGroup.Item>AC</ListGroup.Item>
             <ListGroup.Item>Meja.</ListGroup.Item>
+            <ListGroup.Item>Kursi</ListGroup.Item>
             <ListGroup.Item>Lemari</ListGroup.Item>
           </ListGroup>
           <Card.Body>
@@ -219,6 +224,7 @@ function KitchenSinkExample() {
             <ListGroup.Item>AC</ListGroup.Item>
             <ListGroup.Item>Springbed</ListGroup.Item>
             <ListGroup.Item>Meja</ListGroup.Item>
+            <ListGroup.Item>Kursi</ListGroup.Item>
             <ListGroup.Item>Lemari</ListGroup.Item>
           </ListGroup>
           <Card.Body>

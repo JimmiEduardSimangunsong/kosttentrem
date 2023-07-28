@@ -4,18 +4,21 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import '../style/tailwind.css';
 
 const Chat = () => {
-  const phoneNumber = '8126515295'; // Ganti dengan nomor WhatsApp yang ingin Anda tuju
+  const phoneNumber = '8126515295';
+  const message = encodeURIComponent(
+    'Hallo Kost Tentrem, saya ingin menyewa kamar kos, bisa minta informasi lebih lanjut?'
+  );
 
   return (
     <div className="chat-container">
       <a
-        href={`https://wa.me/${phoneNumber}`}
+        href={`https://wa.me/${phoneNumber}?text=${message}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="whatsapp-link" // Menambahkan kelas CSS untuk tautan WhatsApp
+        className="whatsapp-link"
       >
-        <FontAwesomeIcon icon={faWhatsapp} className="whatsapp-icon" /> {/* Menambahkan kelas CSS untuk ikon WhatsApp */}
-        <span className="whatsapp-text">Hubungi Kami di WhatsApp</span> {/* Menambahkan kelas CSS untuk teks WhatsApp */}
+        <FontAwesomeIcon icon={faWhatsapp} className="whatsapp-icon" />
+        <span className="whatsapp-text">Hubungi Kami di WhatsApp</span>
       </a>
     </div>
   );
