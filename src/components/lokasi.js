@@ -8,8 +8,8 @@ function HeaderAndFooterExample() {
   const googleMapsLink = 'https://www.google.com/maps/dir/3.5706942,98.6490691/link+google+map+kost+tentrem+medan/@3.5695559,98.6477265,17z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x30312fdae412c01d:0x3eee7480058b1f02!2m2!1d98.6507414!2d3.5685751?entry=ttu';
 
   const cardStyle = {
-    backgroundColor: '#2d7719', 
-    
+    backgroundColor: '#2d7719',
+
   };
 
   return (

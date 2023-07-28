@@ -117,7 +117,7 @@ export default function FolderList() {
         </List>
       </Grid>
 
-      
+
       <Grid item xs={12} sm={6} md={2}>
         <List sx={{ width: '100%', bgcolor: 'background.paper' }}>
           <ListItem>
@@ -182,8 +182,8 @@ export default function FolderList() {
           </ListItem>
         </List>
       </Grid>
-      
+
     </Grid>
-  
+
   );
 }

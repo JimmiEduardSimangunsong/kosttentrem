@@ -2,8 +2,8 @@ import React from 'react';
 
 function pesansekarang() {
   const handleWhatsAppClick = () => {
-    const phoneNumber = '1234567890'; // Ganti dengan nomor WhatsApp pemilik kost
-    const message = 'Halo, saya ingin pesan kamar.'; // Ganti dengan pesan yang diinginkan
+    const phoneNumber = '1234567890';
+    const message = 'Halo, saya ingin pesan kamar.';
 
     const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
