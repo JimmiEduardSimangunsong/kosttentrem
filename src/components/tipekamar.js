@@ -16,7 +16,7 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 function KitchenSinkExample() {
   const cardImageStyle = {
-    height: '200px',
+    height: '400px',
     objectFit: 'cover',
   };
 
